@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  font-family: "Inter",sans-serif;
+}
+
+.blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 6, 1, 0.596);
+  backdrop-filter: blur(12px);
+}
+
+body {
+  background-image: url('../Images/Mainbg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.sign {
+  position: absolute;
+  background-image: linear-gradient(to right, #F9BA0E,#936E08);
+  top: 20px;
+  right: 15px;
+  border: none;
+  height: 3.5rem;
+  width: 9rem;
+  border-radius: 550px;
+  font-weight: 600;
+  font-family: "Inter",sans-serif;
+  font-size: 1.5rem;
+}
+
+.selection {
+  position: absolute;
+  background-image: linear-gradient(to right, #F9BA0E,#936E08);
+  top: 10%;
+  left: 25.5%;
+  border: none;
+  height: 4.5rem;
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 25px;
+  border-radius: 550px;
+  font-weight: 600;
+  font-family: "Inter",sans-serif, Arial, Helvetica;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.selection a {
+  text-decoration: none;
+  color: black;
+  margin: 1.5rem;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+.Main {
+  position: relative;
+  margin-top: 13rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(248, 244, 244);
+  font-size: 4rem;
+  overflow: hidden;
+  font-weight: 600;
+}
+
