@@ -40,7 +40,7 @@
     </div>
       
       <section class="features" id="features">
-        <h2 class="sectional-title">
+        <h2 class="section-title">
           why Choose MovieHub
         </h2>
 
@@ -70,6 +70,123 @@
           </div>
         </div>
       </section>
+
+      <!-- Pricing Section -->
+      <section class="pricing" id="pricing">
+        <h2 class="section-title">Choose Your Plan</h2>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Basic</h3>
+            <div class="price">₦2,200<span class="price-period">/month</span></div>
+            <ul class="features-list">
+              <li>720p HD Quality</li>
+              <li>1 Device at a time</li>
+              <li>Unlimited movies & shows</li>
+              <li>Cancel anytime</li>
+            </ul>
+            <button class="choose-btn">Choose Basic</button>
+          </div>
+          
+          <div class="pricing-card popular">
+            <div class="popular-badge">Most Popular</div>
+            <h3>Standard</h3>
+            <div class="price">₦3,500<span class="price-period">/month</span></div>
+            <ul class="features-list">
+              <li>1080p Full HD</li>
+              <li>2 Devices at a time</li>
+              <li>Unlimited movies & shows</li>
+              <li>Download on 2 devices</li>
+              <li>Cancel anytime</li>
+            </ul>
+            <button class="choose-btn">Choose Standard</button>
+          </div>
+          
+          <div class="pricing-card">
+            <h3>Premium</h3>
+            <div class="price">₦5,000<span class="price-period">/month</span></div>
+            <ul class="features-list">
+              <li>4K Ultra HD</li>
+              <li>4 Devices at a time</li>
+              <li>Unlimited movies & shows</li>
+              <li>Download on 4 devices</li>
+              <li>Premium support</li>
+              <li>Cancel anytime</li>
+            </ul>
+            <button class="choose-btn">Choose Premium</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq" id="faq">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              What is MovieHub?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              MovieHub is a streaming service that offers a wide variety of TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              How much does MovieHub cost?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Plans start at ₦2,200 per month. No extra costs, no contracts. You can upgrade, downgrade or cancel anytime.
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              Where can I watch?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Watch anywhere, anytime on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee.
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              How do I cancel?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              MovieHub is flexible. No annoying contracts and no commitments. You can easily cancel your account online in two clicks.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-links">
+          <a href="#faq">FAQ</a>
+          <a href="#">Help Center</a>
+          <a href="#">Account</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <p style="opacity: 0.6;">© 2024 MovieHub Nigeria. All rights reserved.</p>
+      </footer>
+
+      <!-- Sign In Modal -->
+      <div class="modal" id="signInModal">
+        <div class="modal-content">
+          <button class="close-modal" onclick="closeModal()">×</button>
+          <h2>Sign In</h2>
+          <input type="email" placeholder="Email address">
+          <input type="password" placeholder="Password">
+          <button>Sign In</button>
+          <p style="text-align: center; margin-top: 1rem; opacity: 0.7;">
+            New to MovieHub? <a href="#" style="color: #F9BA0E;">Sign up now</a>
+          </p>
     </div>
   </div>
   
