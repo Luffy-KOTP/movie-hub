@@ -28,7 +28,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
+  z-index: 100000;
   transition: all 0.3s ease;
 }
 
@@ -482,7 +482,171 @@ features-list li {
   align-items: center;
 }
 
+ .faq-container {
+  max-width: 900px;
+  margin: 3rem auto 0;
+}
+
+ .faq-item {
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.faq-question:hover {
+  background: rgba(249, 186, 14, 0.1);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 1.5rem;
+}
+
+.faq-answer.active {
+  max-height: 300px;
+  padding: 1.5rem;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.faq-icon.active {
+  transform: rotate(45deg);
+}
+
+/* Footer */
+footer {
+  background: #000;
+  padding: 3rem;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #F9BA0E;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(5px);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #1a1a1a;
+  padding: 3rem;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to right, #F9BA0E, #936E08);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+
 @media (max-width: 768px) {
+  nav {
+    padding: 1rem;
+  }
 
   .logo {
     font-size: 2rem;

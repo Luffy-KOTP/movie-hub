@@ -10,9 +10,9 @@
   <div class="hero-section">
   <div class="blur"></div>
     <div class="content">
-      <nav>
+      <nav id="navbar">
       <span class="logo">MovieHub</span>
-      <button class="sign">Sign In</button>
+      <button class="sign" onclick="openModal()">Sign In</button>
       <div class="selection">
         <a href="/">Popular Now</a>
         <a href="#plans">Plans</a>
@@ -32,8 +32,9 @@
           <div class="subscriber-count">🎬 Join 2M+ subscribers in Nigeria</div>
           <h6>Ready to watch? Enter your email to create or restart your membership.</h6>
           <div class="email-section">
-            <input class="email-input" type="email" placeholder="Email address">
-            <button class="Started">Get Started ></button>
+            <input class="email-input" type="email" placeholder="Email address"
+            id="heroEmail">
+            <button class="Started" onclick="handleGetStarted()">Get Started ></button>
           </div>
         </div>
       </div>
@@ -173,7 +174,7 @@
           <a href="#">Privacy</a>
           <a href="#">Contact Us</a>
         </div>
-        <p style="opacity: 0.6;">© 2024 MovieHub Nigeria. All rights reserved.</p>
+        <p style="opacity: 0.6;">© 2025 MovieHub Interna. All rights reserved.</p>
       </footer>
 
       <!-- Sign In Modal -->
@@ -190,6 +191,6 @@
     </div>
   </div>
   
-
+  <script src="index.js"></script>
 </body>
 </html>
